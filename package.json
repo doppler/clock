@@ -26,6 +26,7 @@
     "files": [
       "index.js",
       "index.html",
+      "clock.js",
       "clock.css",
       "node_modules/**/*"
     ]
