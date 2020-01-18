@@ -31,9 +31,8 @@ app.on('ready', () => {
   setTimeout(createWindow, 300);
 
   let displays = screen.getAllDisplays();
-  displays.forEach(display => console.log(display));
 
-  let displaySize = displays[1].size;
+  let displaySize = displays[displays.length - 1].size;
   x = displaySize.width - width - height;
   y = 0;
 });

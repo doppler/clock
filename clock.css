@@ -3,7 +3,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: bold;
-  color: hsl(30, 100%, 25%);
+  color: hsl(30, 100%, 33%);
   background-color: hsl(0, 100%, 10%, 0.125);
   overflow: hidden;
 }

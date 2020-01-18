@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "electron-builder",
+    "build": "electron-builder -l",
     "start": "nodemon --watch . --exec electron --enable-transparent-visuals --disable-gpu ."
   },
   "devDependencies": {
@@ -23,6 +23,9 @@
       "category": "public.app-category.utilities",
       "target": "AppImage"
     },
+    "win": {
+      "target": "portable"
+    },
     "files": [
       "index.js",
       "index.html",
@@ -30,5 +33,6 @@
       "clock.css",
       "node_modules/**/*"
     ]
-  }
+  },
+  "dependencies": {}
 }
