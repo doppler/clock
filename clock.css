@@ -1,0 +1,13 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(120, 100%, 50%);
+  background-color: hsl(120, 100%, 10%, 0.5);
+}
+#clock {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  -webkit-app-region: drag;
+  overflow: hidden;
+}

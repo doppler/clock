@@ -1,0 +1,33 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "Desktop clock",
+  "main": "./index.js",
+  "author": "David Rose",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "electron-builder",
+    "start": "nodemon --watch . --exec electron --enable-transparent-visuals --disable-gpu ."
+  },
+  "devDependencies": {
+    "electron": "^7.1.9",
+    "electron-builder": "^22.2.0",
+    "nodemon": "^2.0.2"
+  },
+  "build": {
+    "appId": "io.doppler.clock",
+    "productName": "SimpleClock",
+    "copyright": "2020 David Rose",
+    "linux": {
+      "category": "public.app-category.utilities",
+      "target": "AppImage"
+    },
+    "files": [
+      "index.js",
+      "index.html",
+      "clock.css",
+      "node_modules/**/*"
+    ]
+  }
+}
